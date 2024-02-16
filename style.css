@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.nav {
+  background-color: #d32f2f;
+  height: 13vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between; 
+  padding: 0 20px; 
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 50px;
+  
+}
+
+.logoo{
+  width: 10vh;
+  height: 10vh;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 10px;
+  text-decoration: none; 
+  
+}
+
+.nav ul li a {
+  margin: 0px 100 100px 0;
+  color: white;
+  font-size: 25px; 
+  text-decoration: none;
+
+}
+
+
+
+
+.log-in{
+  height: 30px;
+  width: 80px;
+  border: 1px white solid;
+  color: white;
+  background-color: #d32f2f;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: all 0.25s;
+}
+
+.log-in:hover{
+  cursor: pointer;
+  color: #d32f2f;
+  background-color: white;
+}
+
+.sign-up{
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  color: #d32f2f;
+  border: 0px;
+  transition: all 0.25s;
+}
+
+.sign-up:hover{
+  cursor: pointer;
+  color: white;
+  background-color: #d32f2f;
+  border: 1px white solid;
+  border-radius: 5px;
+}
+
+
+
+.fi {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.tlap{
+  color: #d32f2f;
+  font-family: cursive;
+}
+
+.explore{
+  background-color: #d32f2f;
+  color: white;
+  font-family:cursive ;
+  margin: 20px;
+  width: 200px;
+  border-radius: 50vh;
+}
+
+.explore:hover{
+  background-color: white;
+  color: #d32f2f;
+}
+
+
+.tex1 {
+  margin-top: 10%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  justify-content: center; 
+  align-items: center;
+}
+
+
+.card {
+  width: 20%;
+  height: 400px;
+  margin: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+  float: left;
+  background-color:white; color: black;
+  border: 1px black solid;
+  text-align: center;
+  border-radius:20px;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0);
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+
+
+.starr{
+  width: 20px;
+  height: 20px;
+  }
+
+  .buttonorder{
+    border-radius: 5px;
+    background-color:white ;
+    color: black;
+    width: 60%;
+    border-radius: 50px;
+    }
+
+    .buttonorder:hover{
+      background-color:#d32f2f;
+      color: white;
+    }
+
+
+/* .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  font-family: Arial, sans-serif; 
+  border-radius: 50px;
+  border: 1px solid rgb(226, 226, 226);
+  margin: 10px;
+} */
+
+.imgcard{
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+
+
+.price {
+  color: grey;
+  font-size: 18px; 
+}
+
+.card button {
+  padding: 10px 20px; 
+  font-size: 16px; 
+}
+
+
+
+.footer{
+  background: #d32f2f;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#d32f2f;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#d32f2f}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}
+
+
+
+
+
+
+
+@media (max-width: 798) {
+  .nav{
+    flex-direction: column;
+    height: auto; 
+  }
+
+.welcomimg{
+  width: 30%;
+  height: 50px;
+}
+
+  }
+
+
+@media (max-width: 600px) {
+  .nav {
+      flex-direction: column;
+      height: auto; 
+      padding-bottom:20px ;
+  }
+
+.container{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+  .logo {
+      padding: 20px 0; 
+      font-size: 20px; 
+      line-height: 1.2; 
+  }
+
+  .nav ul {
+      margin-top: 10px; 
+      justify-content: center; 
+  }
+
+  .nav ul li {
+      margin: 0px 6px; 
+
+  }
+
+  .fi{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcomimg{
+    width: 80%;
+    height: 20%;
+  }
+
+.explore{
+  width: 150px;
+  height: 35px;
+  font-size: 20px;
+}
+
+  .container {
+      padding: 10px; 
+  }
+
+.imgcard{
+  width: 90%;
+  height: 90%;
+}
+
+  .card {
+      width: 80% ; 
+      margin: 10px; 
+      height: 200px;
+  }
+}
+
+
+
+
+
